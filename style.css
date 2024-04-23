@@ -1,0 +1,57 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    /* padding-left: 200px;
+    padding-right: 200px; */
+}
+.button{
+    margin-right: 20px;
+    font-size: 10px; 
+
+}
+.search{
+    font-size: 20px;
+}
+
+.shoping{ 
+font-size: 20px;
+}
+.article{
+display:flex;
+   justify-content: space-between;
+   margin-top: 80px;
+}
+body{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.right-site{
+    position: relative;
+}
+.left-site{
+    width: 500px;
+}
+
+.camera{
+    display: block;
+    position: absolute;
+    top: 10px;
+}
+.headline{
+    font-size:50px;
+}
+
+.peragraph{
+    margin-top: -25px;
+}
+.button-2{
+    background-color: rgb(211, 32, 139);
+    color: aliceblue;
+    width:140px;
+    height:20px;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
