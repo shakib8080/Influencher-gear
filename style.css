@@ -155,7 +155,6 @@ body{
     display: block;
    align-items: center;
     width:100%;
-    background-color: brown;
   }
 
 .article img{
@@ -195,6 +194,11 @@ body{
 }
 .ftr-article{
     margin-top: -80px;
+}
+.title{
+    display: block;
+    font-size:20px;
+    /* width: 100PX; */
 }
 
 }
