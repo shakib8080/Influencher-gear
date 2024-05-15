@@ -7,9 +7,12 @@
     padding-right: 200px; */
 }
 .button{
-    margin-right: 20px;
     font-size: 10px; 
 
+}
+.btn-group{
+    display: flex;
+    gap: 12px;
 }
 .search{
     font-size: 20px;
@@ -19,13 +22,15 @@
 font-size: 20px;
 }
 .article{
-display:flex;
-   justify-content: space-between;
-   margin-top: 80px;
+   display:grid;
+   grid-template-columns: repeat(2,1fr);
+   align-items:center ;
+   margin-top: 20px;    
+   justify-content: space-between;                                                                                                            
 }
 body{
-    margin-left: 200px;
-    margin-right: 200px;
+   width: 80%;
+   margin: auto;
 }
 .right-site{
     position: relative;
@@ -38,9 +43,6 @@ body{
     display: block;
     position: absolute;
     top: 10px;
-}
-.headline{
-    font-size:50px;
 }
 
 .peragraph{
@@ -61,7 +63,10 @@ body{
    gap:100px;
    justify-content: center;
    margin-top:150px;
-   font-size: 60px;
+   font-size:60px;
+}
+.title{
+    font-size: 50px;
 }
 .headline{
     margin-top: 300px;
@@ -76,7 +81,7 @@ body{
 .collection{
     background-color:lightgray;
     height: 506px;
-    width: 362px;
+    
     border-radius: 7px;
 }
 .peragraph{
@@ -98,7 +103,7 @@ body{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
     grid-row-gap:25px;
-    grid-column-gap:-100px;
+    grid-column-gap:20px;
     justify-items: center;
 }
 .img-hover:hover{
@@ -106,11 +111,10 @@ body{
   transition:transform 1s ease-in;
   }
   .seemore{
-    margin-left: 87%;
-    margin-top: 5px;
-    gap: 10px;
-    color: rgb(246, 65, 4);
-    font-size: 20px;
+    text-align: end;
+    color: orangered;
+    
+   
   
   }
   .fotter-up{
@@ -135,4 +139,62 @@ body{
     display: flex;
    justify-content : center;
    gap: 30px;
+}
+
+/* media query for tABLET IPAD PRO  */
+@media screen and (max-width: 600px) {
+  .header{
+    display: block;
+  }
+  .btn-group{
+    display: flex;
+    gap: 5px;
+  }
+
+  .article{
+    display: block;
+   align-items: center;
+    width:100%;
+    background-color: brown;
+  }
+
+.article img{
+    width:70%;
+}
+.left-site{
+    width:200px ;
+}
+.loghu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:10px;
+    margin-top:30px;
+    border:0px;
+}
+.headline{
+    margin-top:-0.1px;
+}
+.our-collection{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9,1fr);
+
+}
+
+.fotter-up{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left:0px;
+    padding-right:0px;
+    justify-content: center;
+   
+}
+.fotter-up img{
+    width:99%
+}
+.ftr-article{
+    margin-top: -80px;
+}
+
 }
